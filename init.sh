@@ -2,9 +2,9 @@
 
 main() {
 	getUpdate
-	correctTime
+	#correctTime
 	getTorSoftware
-	createInfo
+	createRandomInfo
 	service tor restart
 }
 
