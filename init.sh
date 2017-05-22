@@ -40,8 +40,10 @@ createRandomInfo(){
 	ExitPolicy reject *:* # no exits allowed 
 	ExitPolicy reject6 *:*
 
-	ORPort 9001
-	DirPort 9030
+	ORPort 443 NoListen
+	ORPort 9001 NoAdvertise
+	DirPort 80 NoListen 
+	DirPort 9030 NoAdvertise
 	ExitPolicy reject *:*
 
 	DisableDebuggerAttachment 0
